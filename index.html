@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EcoSeat</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #ecfdf5;
+    transition: 0.4s;
+}
+
+/* DARK MODE */
+.dark {
+    background: #0f172a;
+    color: white;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    height: 90px;
+}
+
+nav span {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background: linear-gradient(to right, #d1fae5, #a7f3d0);
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    color: #065f46;
+}
+
+.hero img {
+    width: 350px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 80px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 220px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px;
+    text-align: center;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 80px;
+    background: #065f46;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<img src="logo.png">
+<div>
+<span>Why EcoSeat</span>
+<span>How It Works</span>
+<span>Use Cases</span>
+</div>
+<button onclick="toggleDark()">🌙</button>
+</nav>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Stay Clean Anywhere</h1>
+<p>Portable, eco-friendly toilet seat covers for hygiene in public spaces.</p>
+<button onclick="buyNow()">Get Yours Now</button>
+</div>
+<img src="hero.png">
+</section>
+
+<section class="cards">
+
+<div class="card">
+<img src="Travel.png">
+<h3>Travel</h3>
+<p>Stay clean anywhere</p>
+</div>
+
+<div class="card">
+<img src="festival.png">
+<h3>Festivals</h3>
+<p>High crowds, zero worries</p>
+</div>
+
+<div class="card">
+<img src="Toilet.png">
+<h3>Public</h3>
+<p>Confidence in every seat</p>
+</div>
+
+</section>
+
+<section class="features">
+<div>Eco-Friendly 🌱</div>
+<div>Flushable 💧</div>
+<div>Hygienic 🧼</div>
+</section>
+
+<section class="about">
+<h2>Why EcoSeat?</h2>
+<p>Designed for modern lifestyles, EcoSeat ensures hygiene anywhere.</p>
+</section>
+
+<section class="cta">
+<h2>€25 per box (50 covers)</h2>
+<p>ecoseat@outlook.com | +31 6 15221310</p>
+<button onclick="buyNow()">Order Now</button>
+</section>
+
+<footer>
+<p>©️ 2026 EcoSeat</p>
+</footer>
+
+<script>
+function buyNow(){
+    alert("Order coming soon!");
+}
+
+function toggleDark(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
